@@ -1,0 +1,82 @@
+extends layout.pug
+
+block header
+
+block content
+  section#landing-mainpage
+    header
+      a#landing-mainpage-sign(href='/dzenapp/sign') Войти
+    #landing-content
+      h1#landing-mainpage-text-first.landing-mainpage-text DZENFIN
+      h3#landing-mainpage-text-second.landing-mainpage-text Личный бюждет онлайн
+      h4#landing-mainpage-text-third.landing-mainpage-text Визуализируй свой финансовый план
+      a#landing-signup-submit.rd-box(href='dzenapp/signupDEMO') СОЗДАТЬ БЮДЖЕТ
+
+  section#landing-section-second.landing-section
+    h2 Уникальный подход для управления личными финансами
+    #landing-image-img-categories.landing-image
+      img#landing-image-img-categories.landing-image-img(src='img/laptop-app.png', alt='')
+    .wrap
+      p
+        strong 15 конвертов
+        br
+        | Наглядное представление категорий. Планируй, вноси расходы. Текущая ситуация перед глазами
+      p
+        strong Карта бюджета
+        br
+        | 1 клетка = 100 рублей, или любой другой Вашей валюты. Цветные клетки это бюджет конверта. Зачеркнутые это израсходованные средства, пустые это доступные
+      p
+        strong 12 бюджетов
+        br
+        | По одному на каждый календарный месяц. Нет ничего лучше, чем открывать новый бюджет
+      .clearfix
+  section#landing-section-third.landing-section
+    h2 Максимальная лёгкость при использовании
+    h3.landing-losung-text
+      | От первого результата вас отделяет несколько кликов. Ненужна синихронизация, используйте любое устройство, вам нужен только логин и пароль.
+    .wrap
+      .landing-icon
+        .round-icon
+          span.mega-octicon.octicon-light-bulb
+        p
+          strong Эффективно
+          br
+          |  для управления личными финансами
+      .landing-icon
+        .round-icon
+          span.mega-octicon.octicon-clock
+        p
+          strong Быстро
+          br
+          |  планировать и контролировать
+      .landing-icon
+        .round-icon
+          span.mega-octicon.octicon-device-mobile
+        p
+          strong Доступно
+          br
+          |  с любого устройства
+      .clearfix
+  section#landing-section-fourth.landing-section
+    h2 Интуитивный учет расходуемых средств
+    p.landing-losung-text
+      | Вся основная информация по конвертам в одном месте. Сколько запланировано, сколько израсходовано, сколько осталось по любому конверту.
+    #landing-image-img-categories-articles.landing-image
+      img#landing-image-img-categories-articles.landing-image-img(src='img/categories_articles.png', alt='')
+    .clearfix  
+  section#landing-section-feedback.landing-section
+    h2 Что говорят?
+    #landing-image-img-map.landing-image
+      img#landing-image-img-map.landing-image-img(src='img/feedback.png', alt='')
+    p.autor-name Мария Блинова
+    p.whois Домохозяйка, мать двоих детей
+    blockquote
+      | "Я перепробовала всё, от тетрадки до excel. Этот сервис самый лучший способ, быть в курсе своей финансовой ситуации, каждый день снова и снова"
+    .clearfix  
+  section#landing-section-end.landing-section
+    h2 Имея бюджет, вы избавляетесь от постоянного финансового хаоса
+    a#landing-signup-submit-bottom.rd-box(href='dzenapp/signupDEMO') СОЗДАТЬ БЮДЖЕТ
+    p *без регистрации
+  .clearfix
+
+

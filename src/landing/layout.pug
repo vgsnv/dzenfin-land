@@ -1,0 +1,46 @@
+//- layout.pug
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(name='yandex-verification', content='630037385a16f23e')
+    meta(name='description', content='Веб-сервис для бюджетирования и контроля личных финансов с помощью метода конвертов')
+    title DZENFIN — сервис для составления и контроля семейного бюджета!
+    style.
+      #landing-mainpage {
+        background: linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/img/back.png) no-repeat center center fixed;
+      }
+    link(rel='stylesheet', href='/css/cssreset.css')
+    link(rel='stylesheet', href='/css/fonts.css')
+    link(rel='stylesheet', href='/css/footer.css')
+    link(rel='stylesheet', href='/css/landing.css')
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter35072585 = new Ya.Metrika({ id:35072585, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/35072585" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+  body
+    block header
+      <header>
+        <a id="logo" href="/">DZENFIN</a>
+        <div class="clearfix"></div>
+      </header>
+
+    main
+      block content
+
+    block footer
+      footer
+        #footer-logo
+          p#footer-logo-title DZENFIN
+          p © 2015–2017
+        .footer-block-links
+          .caption Проект
+          a(href='/about.html') О проекте
+          a(href='/contacts.html') Обратная связь
+          a#copyright(href='/about.html') © vgsnv.ru
+          .clearfix
+        .footer-block-links
+          .caption Информация
+          a(href='/howto.html') Как это работает
+          a(href='/forBeginners.html') Планируем бюджет 
+          .clearfix
